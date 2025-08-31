@@ -17,6 +17,6 @@ describe("ApiKey",()=>{
 
     test("Return a string", ()=>{
         vi.mocked(auth.getAPIKey).mockReturnValue("SOMEKEYVALUE")
-        expect(auth.getAPIKey(header3)).toEqual("ASOMEKEYVALUE")
+        expect(auth.getAPIKey(header3)).toEqual("SOMEKEYVALUE")
     })
 })
