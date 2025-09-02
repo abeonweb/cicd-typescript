@@ -39,7 +39,7 @@ jobs:
         run: gcloud builds submit --tag africa-south1-docker.pkg.dev/notely-470718/notely-ar-repo/notely:latest .
       
         env:
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DATABASE_URL: '${{ secrets.DATABASE_URL }}'
           
       - name: Run Database migration
         run: npm run db:migrate
